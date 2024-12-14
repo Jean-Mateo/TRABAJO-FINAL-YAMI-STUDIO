@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Tipo de documento HTML5 -->
+    <meta charset="UTF-8">
+    <!-- Configuramos el viewport para que sea compatible con dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título de la página que aparecerá en la pestaña del navegador -->
+    <title>Pide tu Cita</title>
+    <!-- Enlace a la hoja de estilos CSS ubicada en la carpeta css -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <!-- Inicio del encabezado -->
+    <header>
+        <h1>Pide tu Cita</h1>
+        <!-- Breve descripción o introducción -->
+        <p>Salón de belleza especializado en manicura y pedicura</p>
+    </header>
+    <!-- Barra de navegación con enlaces a las demás páginas -->
+    <nav>
+        <a href="../index.html" class="active">Inicio</a>
+        <a href="cita.html" class="active">Pide tu cita</a>
+        <a href="Galería.html" class="active">Galería</a>
+        <a href="contacto.html" class="active">Contacto</a>
+    </nav>
+
+    <div class="container">
+        <!-- Sección para rellenar -->
+        <form>
+            <!-- Campo Nombre -->
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <!-- Campo Teléfono -->
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" title="Debe contener 9 dígitos numéricos" required>
+
+            <!-- Campo Email -->
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+            <!-- Campo Solicite más información -->
+            <label for="info">Solicite más información</label>
+            <textarea id="info" name="info" rows="4" placeholder="Escribe aquí tus dudas o comentarios..." required></textarea>
+
+            <!-- Campo Servicio -->
+            <label for="servicio">Servicio</label>
+            <select name="servicio" id="servicio" required>
+                <option value="" disabled selected>Seleccione un servicio</option>
+                <option value="manicura-tradicional">Manicura tradicional - 20 €</option>
+                <option value="manicura-francesa">Manicura Francesa - 20 €</option>
+                <option value="semipermanente">Semipermanente - 25 €</option>
+                <option value="unas-acrilicas">Uñas Acrílicas - 30 €</option>
+                <option value="pedicura">Pedicura - 27 €</option>
+            </select>
+
+            <!-- Campo Fecha -->
+            <label for="fecha">Fecha</label>
+            <input type="date" id="fecha" name="fecha" required>
+
+            <!-- Campo Hora -->
+            <div class="form-group">
+                <label for="hora">Hora</label>
+                <select id="hora" name="hora" required>
+                    <option value="">Selecciona una hora</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+            </div>
+
+            <!-- Checkbox para aceptar la Política de privacidad -->
+            <input type="checkbox" id="politica" name="aceptar_privacidad" aria-label="Acepto la Política de privacidad" required>
+            <label for="politica">Acepto la <a href="politica_privacidad.html" target="_blank">Política de privacidad</a></label>
+
+            <!-- Botón para enviar el formulario -->
+            <button type="submit">Reservar</button>
+        </form>
+    </div>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>
+            <a href="https://instagram.com/yamile.rodriguez.9022" target="_blank">
+                <i class="fab fa-instagram"></i> Instagram
+            </a> |
+            Dirección: Av. Regimiento de Galicia, 11, 22700 Jaca, Huesca |
+            <a href="aviso_legal.html">Aviso Legal</a>
+        </p>
+    </footer>
+</body>
+</html>
